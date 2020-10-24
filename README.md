@@ -1,0 +1,2 @@
+# fortran_plot
+FortranからGnuplotを使ってグラフを出力するモジュールです。Fortranでpltファイルを作っているだけです。
