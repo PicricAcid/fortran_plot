@@ -18,7 +18,7 @@ contains
     character(*):: file_name
     integer:: status, system
 
-    status = system("open -a preview "//file_name//".plt")
+    status = system("open -a preview "//file_name//".png")
   end subroutine file_open
 
   subroutine plt_file_delete(file_name)
