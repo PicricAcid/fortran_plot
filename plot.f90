@@ -69,9 +69,9 @@ contains
 
     open(iunit, file="./"//file_name//".plt", status="old", position="append")
     if(present(option)) then
-      write(iunit, "(a)", advance="no") "'"//dat_file_name//".dat' "//option//", \"
+      write(iunit, "(a)", advance="no") "'"//dat_file_name//".dat' title '"//dat_file_name//"' "//option//", \"
     else
-      write(iunit, "(a)", advance="no") "'"//dat_file_name//".dat', \"
+      write(iunit, "(a)", advance="no") "'"//dat_file_name//".dat' title '"//dat_file_name//"', \"
     end if
     close(iunit)
 
