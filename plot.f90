@@ -62,16 +62,16 @@ contains
 
   end subroutine plot_options
 
-  subroutine plot_graph(file_name, option)
+  subroutine plot_graph(file_name, dat_file_name, option)
     integer, parameter:: iunit = 90
-    character(*):: file_name
+    character(*):: file_name, dat_file_name
     character(*), optional:: option
 
     open(iunit, file="./"//file_name//".plt", status="old", position="append")
     if(present(option)) then
-      write(iunit, "(a)", advance="no") "'"//file_name//".dat' "//option//", \"
+      write(iunit, "(a)", advance="no") "'"//dat_file_name//".dat' "//option//", \"
     else
-      write(iunit, "(a)", advance="no") "'"//file_name//".dat', \"
+      write(iunit, "(a)", advance="no") "'"//dat_file_name//".dat', \"
     end if
     close(iunit)
 
