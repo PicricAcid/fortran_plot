@@ -4,7 +4,7 @@ program plot_sample
 
   integer, parameter:: n = 10
   integer, parameter:: iunit = 10
-  double precision, parameter:: pi = 3.1415926535
+  double precision, parameter:: pi = acos(-1.0d0)
 
   integer:: i
   double precision:: rand, y
