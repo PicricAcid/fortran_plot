@@ -21,7 +21,7 @@ program plot_sample
 
   close(iunit)
 
-  call plot_options(file_name="plot", title="sapmle", xlabel="x", ylabel="y")
+  call plot_options(file_name="plot", title="plot sapmle", xlabel="x", ylabel="y")
   call plot_graph(file_name="plot", dat_file_name="plot")
   call plot_graph(file_name="plot", dat_file_name="plot", option="with lines")
   call plot_open("plot")
